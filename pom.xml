@@ -56,7 +56,7 @@
             <version>3.20.0-GA</version>
         </dependency>
 
-        <!-- Lombok (fix compilation issues) -->
+        <!-- Lombok (Fix compilation issues) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -148,7 +148,7 @@
         </plugins>
     </build>
 
-    <!-- Nexus deployment -->
+    <!-- Nexus deployment configuration -->
     <distributionManagement>
         <repository>
             <id>maven-releases</id>

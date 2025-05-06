@@ -128,6 +128,13 @@
                 <version>3.9.1.2184</version>
             </plugin>
 
+            <!-- Maven Deploy Plugin for Nexus -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+
             <!-- Annotation processing for Lombok -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -148,15 +155,15 @@
         </plugins>
     </build>
 
-    <!-- Nexus deployment configuration -->
+    <!-- Nexus Deployment -->
     <distributionManagement>
         <repository>
             <id>maven-releases</id>
-            <url>http://34.235.148.138:8081/repository/maven-releases/</url>
+            <url>http://your-nexus-server:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://34.235.148.138:8081/repository/maven-snapshots/</url>
+            <url>http://your-nexus-server:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
